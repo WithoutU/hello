@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#outer{
+				width: 90%;
+				height: 500px;
+				background-color: orangered;
+			}
+			#inner{
+				/*width: 100px;
+				height: 100px;*/
+				/*margin,padding所有值根据父级或者定位父级的宽度进行计算*/
+				padding: 50%;/*500px 500px 500px 500px*/
+				padding: 5%;
+				background-color: orchid;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+			<div id="inner"></div>
+		</div>
+	</body>
+</html>

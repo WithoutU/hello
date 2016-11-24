@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>自定义字体</title>
+		<style type="text/css">
+			@font-face {
+				/*自定义字体名字*/
+				font-family: myfont1;
+				src: url(fonts/webfont.ttf);
+			}
+			@font-face {
+				font-family: 'webfont';
+			    src: url('webfont.eot'); /* IE9*/
+			    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			    url('webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+			    url('webfont.woff') format('woff'), /* chrome、firefox */
+			    url('webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+			}
+			div{
+				font-family: myfont1;
+			}
+		</style>
+	</head>
+	<body>
+		<!--压缩字体包 只存在部分中文字-->
+		<div>山不在高，有仙则名。水不在深，有龙则灵</div>
+		<p>山不在高，有仙则名。水不在深，有龙则灵</p>
+		<div>你好！有世界</div>
+	</body>
+</html>
+
+
+
+
+
+

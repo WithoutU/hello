@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>iconfont</title>
+		<style type="text/css">
+			@font-face {
+				font-family: iconfont;
+				src: url(fonts/iconfont.ttf);
+			}
+			.icon{
+				font-family: iconfont;
+				font-size: 4em;
+				/*内容不会被选中*/
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				/*鼠标*/
+				cursor: pointer;
+			}
+			.icon:hover{
+				color: deepskyblue;
+			}
+			.icon:active{
+				color: cornflowerblue;
+			}
+			.icon-ten:before{
+				/*content中插入iconfont编码*/
+				content: "\3454";
+			}
+		</style>
+	</head>
+	<body>
+		<!--unicode 使用iconfont-->
+		<span class="icon">&#xe63b;</span>
+		<span class="icon icon-ten"></span>
+	</body>
+</html>

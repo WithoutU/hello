@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html,body,div{
+				width: 2000px;
+				height: 100%;
+			}
+			body{
+				width: 1000px;
+				margin: 0;
+				position: relative;
+			}
+			#outer{
+				width: 50%;
+				background-color: red;
+			}
+			#inner{
+				width: 50%;
+				background-color: orange;
+				/*当设置定位时，宽的百分比根据定位父级进行计算*/
+				position: absolute;
+			}
+			#inner_inner{
+				width: 50%;
+				background-color: palevioletred;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+			<div id="inner">
+				<div id="inner_inner"></div>
+			</div>
+		</div>
+	</body>
+</html>

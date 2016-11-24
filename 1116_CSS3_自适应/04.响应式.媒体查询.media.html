@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;}
+			html,body{
+				width: 100%;
+				height: 100%;/*一个屏幕高度*/
+				min-width: 321px;
+			}
+			#outer{
+				width: 80%;
+				height: 100%;
+				margin: 0 auto;
+				background-color: darkcyan;
+			}
+			.inner{
+				width: 50%;
+				height: 100%;
+				background-color: darkgoldenrod;
+				float: left;
+			}
+			.inner:nth-child(2){
+				background-color: darkgreen;
+			}
+			/*当屏幕宽度在320到640之间时*/
+			@media screen and (min-width: 320px) and (max-width: 640px) {
+				.inner{
+					width: 100%;
+					height: 50%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!--响应式布局    自适应布局-->
+		<div id="outer">
+			<div class="inner">1</div>
+			<div class="inner">2</div>
+		</div>
+	</body>
+</html>
